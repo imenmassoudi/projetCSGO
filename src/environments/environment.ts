@@ -5,12 +5,20 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAgxmjmNQdmVKHHsqNJ2tSNld8QA-2ZKhg",
-    authDomain: "test-a0b36.firebaseapp.com",
-    databaseURL: "https://test-a0b36.firebaseio.com",
-    projectId: "test-a0b36",
-    storageBucket: "test-a0b36.appspot.com",
-    messagingSenderId: "31965440678",
+   /* apiKey: 'AIzaSyAgxmjmNQdmVKHHsqNJ2tSNld8QA-2ZKhg',
+    authDomain: 'test-a0b36.firebaseapp.com',
+    databaseURL: 'https://test-a0b36.firebaseio.com',
+    projectId: 'test-a0b36',
+    storageBucket: 'test-a0b36.appspot.com',
+    messagingSenderId: '31965440678'*/
+  apiKey: 'AIzaSyC1zKllyXkc2rSv5Rz4GJEKAkInJv1sVEg',
+  authDomain: 'freelancini-1e0e3.firebaseapp.com',
+  databaseURL: 'https://freelancini-1e0e3.firebaseio.com',
+  projectId: 'freelancini-1e0e3',
+  storageBucket: 'freelancini-1e0e3.appspot.com',
+  messagingSenderId: '460007213830',
+  appId: '1:460007213830:web:6d6250d0c1118c04c86c87',
+  measurementId: 'G-R27EBYKBBV'
   }
 };
 

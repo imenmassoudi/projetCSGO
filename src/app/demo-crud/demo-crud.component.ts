@@ -1,15 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import { AngularFireDatabase } from '@angular/fire/database';
-import { Observable } from 'rxjs';
-import {Users} from './demo-crud/user';
-import {UsersService} from './demo-crud/users.service';
+import { Component, OnInit } from '@angular/core';
+import {UsersService} from './users.service';
+import {Users} from './user';
 import {map} from 'rxjs/operators';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-demo-crud',
+  templateUrl: './demo-crud.component.html',
+  styleUrls: ['./demo-crud.component.css']
 })
-export class AppComponent implements  OnInit {
+export class DEMOCRUDComponent implements OnInit {
+
   constructor(private usersService: UsersService) {}
   submitted = false;
   editState = false;
@@ -25,8 +25,8 @@ export class AppComponent implements  OnInit {
     this.usersService.addUser(this.user);
   }
   deleteUser(event, user: Users) {
-      console.log(user);
-      this.usersService.deleteUser(user);
+    console.log(user);
+    this.usersService.deleteUser(user);
   }
   ngOnInit() {
     this.getProdList();
@@ -54,4 +54,5 @@ export class AppComponent implements  OnInit {
       this.editState = false;
     }
   }
+
 }
