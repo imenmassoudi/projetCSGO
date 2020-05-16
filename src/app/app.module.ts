@@ -10,11 +10,13 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import { DEMOCRUDComponent } from './demo-crud/demo-crud.component';
+import { AccueilComponent } from './visiteur/accueil/accueil.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DEMOCRUDComponent
+    DEMOCRUDComponent,
+    AccueilComponent
   ],
   imports: [
     BrowserModule,
