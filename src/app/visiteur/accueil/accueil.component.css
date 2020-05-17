@@ -159,5 +159,5 @@
     }
   }
 
-  #carouselExampleCaptions{margin-top: 50px;}
-  #carouselExampleCaptions img{height: 400px;width: 75%}
+  .carousel{margin-top: 50px;}
+  .carousel img{height: 400px;width: 75%}
