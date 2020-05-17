@@ -12,6 +12,9 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
 import { DEMOCRUDComponent } from './demo-crud/demo-crud.component';
 import { AccueilComponent } from './visiteur/accueil/accueil.component';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +28,8 @@ import { AccueilComponent } from './visiteur/accueil/accueil.component';
     AngularFireDatabaseModule, // for database
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
