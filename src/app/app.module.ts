@@ -12,6 +12,8 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
 import { DEMOCRUDComponent } from './demo-crud/demo-crud.component';
 import { AccueilComponent } from './visiteur/accueil/accueil.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,7 @@ import { AccueilComponent } from './visiteur/accueil/accueil.component';
     AngularFireDatabaseModule, // for database
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
