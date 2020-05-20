@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accueil.component.css']
 })
 export class AccueilComponent implements OnInit {
-
+tab = [
+  ,
+  ,
+  ,
+];
   constructor() { }
 
   ngOnInit() {
