@@ -47,7 +47,7 @@
 
 .jumbotron{
   padding: 1rem;
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 .padding{
@@ -67,7 +67,7 @@
   margin-bottom: 1rem;
 }
 
-.fa-code , .fa-bold,.fa-css3{
+.fa-code ,.fa-shopping-cart,.fa-globe,.fa-pencil-ruler,.fa-headset, .fa-bold,.fa-css3,.fa-project-diagram{
   font-size: 4em;
   margin: 1rem;
 }
@@ -133,7 +133,7 @@ hr.light-100{
     font-size: 4em;
     padding: 2rem;
   }
-  }
+}
 @media (max-width: 768px) {
   .carousel-caption{
     top: 45%;
@@ -218,10 +218,33 @@ figure {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
 }
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
+}
+
+/*css liste des missions*/
+#liste_mission{
+  width:400px;
+  margin-left: 100px;
+}
+#listgrp{
+  width: 670px;
+  height: 160px;
+}
+#card:hover
+{ transform: scale(1.01);
+  box-shadow: 2px 2px 2px #808080;
+}
+#divcard{
+  margin-left: 10px;
+}
+#cardtitle{
+  color:#667985;
+}
+#cardimg{
+  margin-right: 100px;
 }
