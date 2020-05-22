@@ -12,6 +12,27 @@
   font-size: 1.1em !important;
 }
 
+.navbar button {
+  cursor: pointer;
+}
+
+.navbar button:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.navbar .button {
+  display: inline-block;
+  background-color: #6059f6;
+  color: #fff;
+  border-radius: 30px;
+  padding: 8px 25px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
 .carousel-inner img{
   width: 100%;
   height: 515px;
@@ -65,6 +86,25 @@
   width: 95%;
   margin-top: .3rem;
   margin-bottom: 1rem;
+}
+
+.fa-code{
+  color: #bb0000;
+}
+.fa-shopping-cart{
+  color: orangered;
+}
+.fa-globe{
+  color: purple;
+}
+.fa-pencil-ruler{
+  color: #3b5998;
+}
+.fa-headset{
+  color: crimson;
+}
+.fa-project-diagram{
+  color: #3f3f3f;
 }
 
 .fa-code ,.fa-shopping-cart,.fa-globe,.fa-pencil-ruler,.fa-headset, .fa-bold,.fa-css3,.fa-project-diagram{
@@ -231,9 +271,8 @@ figure {
   width:400px;
   margin-left: 100px;
 }
-#listgrp{
-  width: 670px;
-  height: 160px;
+#card img{
+  width: 150px;
 }
 #card:hover
 { transform: scale(1.01);
