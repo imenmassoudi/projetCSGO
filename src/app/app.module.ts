@@ -12,6 +12,8 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
 import { DEMOCRUDComponent } from './demo-crud/demo-crud.component';
 import { AccueilComponent } from './visiteur/accueil/accueil.component';
 import { ContactComponent } from './visiteur/contact/contact.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProjetComponent } from './classe/projet/projet.component';
 
 
 
@@ -20,7 +22,8 @@ import { ContactComponent } from './visiteur/contact/contact.component';
     AppComponent,
     DEMOCRUDComponent,
     AccueilComponent,
-    ContactComponent
+    ContactComponent,
+    ProjetComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +33,7 @@ import { ContactComponent } from './visiteur/contact/contact.component';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
