@@ -14,6 +14,9 @@ import { AccueilComponent } from './visiteur/accueil/accueil.component';
 import { ContactComponent } from './visiteur/contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProjetComponent } from './classe/projet/projet.component';
+import { NavbarComponent } from './visiteur/navbar/navbar.component';
+import { FooterComponent } from './visiteur/footer/footer.component';
+import { CarouselComponent } from './visiteur/carousel/carousel.component';
 
 
 
@@ -23,7 +26,10 @@ import { ProjetComponent } from './classe/projet/projet.component';
     DEMOCRUDComponent,
     AccueilComponent,
     ContactComponent,
-    ProjetComponent
+    ProjetComponent,
+    NavbarComponent,
+    FooterComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

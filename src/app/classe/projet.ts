@@ -8,5 +8,5 @@ export interface Projets {
     date_debut?: Date;
     date_fin?: Date;
     etat?: boolean;
+    image?: string;
 }
-  
