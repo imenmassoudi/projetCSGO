@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
@@ -17,7 +18,10 @@ import { ProjetComponent } from './classe/projet/projet.component';
 import { NavbarComponent } from './visiteur/navbar/navbar.component';
 import { FooterComponent } from './visiteur/footer/footer.component';
 import { CarouselComponent } from './visiteur/carousel/carousel.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import{MaterialModule} from './material/material.module';
+import { InscritFComponent } from './freelancer/inscrit-f/inscrit-f.component';
+import { InscritCComponent } from './client/inscrit-c/inscrit-c.component';
 
 
 @NgModule({
@@ -29,7 +33,9 @@ import { CarouselComponent } from './visiteur/carousel/carousel.component';
     ProjetComponent,
     NavbarComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    InscritFComponent,
+    InscritCComponent
   ],
   imports: [
     BrowserModule,
@@ -40,8 +46,12 @@ import { CarouselComponent } from './visiteur/carousel/carousel.component';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents:[InscritFComponent,InscritCComponent]
 })
 export class AppModule { }

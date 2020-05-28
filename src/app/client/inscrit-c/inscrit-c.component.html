@@ -1,0 +1,43 @@
+<mat-grid-list cols="2" >
+    <!-- fromulaire du client-->
+    <mat-grid-tile>
+<form [formGroup]="service.fcli">
+    <mat-toolbar>
+        <span>Client</span>
+        </mat-toolbar>
+<div >
+    <mat-form-field>
+        <input formControlName="client" type="text" matInput placeholder="Client/Entreprise">
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+        <input formControlName="mail" type="email" matInput placeholder="email">
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+        <input formControlName="password" matInput  type="password" placeholder="mot de passe">
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+        <input  formControlName="cpassword" matInput  type="password" placeholder="confirmer mot de passe">
+    </mat-form-field>
+    <br/>
+    <mat-form-field>
+        <input  formControlName="tel" matInput  type="number" placeholder="téléphone">
+    </mat-form-field>
+    <br/>
+<div>
+    <mat-checkbox formControlName="accept">J'ai lu et j'accepte les termes et conditions</mat-checkbox>
+</div>
+   <div><button mat-raised-button color="primary">S'inscrire</button></div>
+        
+   
+</div>
+
+</form>
+</mat-grid-tile>
+<mat-grid-tile>
+    <img src="https://www.easiware.com/hubfs/relation%20client%20banque.jpeg">
+    </mat-grid-tile>
+</mat-grid-list>
+

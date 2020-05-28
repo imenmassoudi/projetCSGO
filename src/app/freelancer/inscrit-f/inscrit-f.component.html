@@ -1,0 +1,73 @@
+<mat-toolbar>
+  <span>freelancer</span>
+  </mat-toolbar>
+
+<mat-horizontal-stepper linear #stepper>
+  <mat-step [stepControl]="service.ffree">
+    <form [formGroup]="service.ffree">
+      <ng-template matStepLabel>Votre Information</ng-template>
+      <div >
+        <input type="hidden" formControlName="reclamation">
+        <input type="hidden"  formControlName="point">
+        <mat-form-field>
+            <input formControlName="prenom" type="text" matInput placeholder="Prenom" required>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <input formControlName="nom" type="text" matInput placeholder="Nom" required>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <input formControlName="$mail" type="email" matInput placeholder="Email" required>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <input formControlName="password" matInput  type="password"placeholder="mot de passe" required>
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input  formControlName="cpassword" matInput  type="password"placeholder="confirmer mot de passe" required>
+        </mat-form-field>
+        <div>
+            
+            <mat-radio-group formControlName="genre" required>
+                <mat-radio-button value="1">Homme</mat-radio-button>
+                <mat-radio-button value="2">Femme</mat-radio-button>
+            </mat-radio-group>
+        </div>
+        <mat-form-field>
+            <input  formControlName="tel" matInput  type="number" placeholder="téléphone" required>
+        </mat-form-field>
+    <div>
+        <mat-checkbox formControlName="accept" required>J'ai lu et j'accepte les termes et conditions</mat-checkbox>
+    </div>
+    <div>
+      <button mat-button matStepperNext color="primary" (click)="addfree()" >Suivant</button>
+    </div>
+      </div>
+      
+     
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="service.ffreec">
+    <form [formGroup]="service.ffreec">
+      <ng-template matStepLabel>Votre Domaine</ng-template>
+      <mat-selection-list #shoes formControlName="domaine">
+        <mat-list-option *ngFor="let d of domaine">
+          {{d}}
+        </mat-list-option>
+      </mat-selection-list>
+      <button mat-button matStepperPrevious>Retour</button>
+      <button mat-button matStepperNext>Suivant</button>
+      
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Terminer</ng-template>
+    <p>Bienvenu Cher Freelancer</p>
+    <div>
+      <button mat-button matStepperPrevious>Retour</button>
+      <button mat-button (click)="stepper.reset()">S'inscrire</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
